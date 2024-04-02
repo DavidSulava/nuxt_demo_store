@@ -8,11 +8,10 @@ export default {
     "dynamicImports": [
       "virtual:nuxt:/home/david/Programming/Personal/Store_On_Nuxt_3/.nuxt/error-component.mjs",
       "layouts/default.vue",
-      "layouts/products.vue"
+      "layouts/products.vue",
+      "node_modules/nuxt/dist/app/entry.mjs-css"
     ],
-    "css": [
-      "entry.d5006b6e.css"
-    ]
+    "css": []
   },
   "entry.d5006b6e.css": {
     "file": "entry.d5006b6e.css",
@@ -38,9 +37,7 @@ export default {
       "node_modules/nuxt/dist/app/entry.mjs",
       "_fetch.63c9fdec.js"
     ],
-    "css": [
-      "about.cb784107.css"
-    ]
+    "css": []
   },
   "about.cb784107.css": {
     "file": "about.cb784107.css",
@@ -63,9 +60,7 @@ export default {
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"
     ],
-    "css": [
-      "index.f34bb951.css"
-    ]
+    "css": []
   },
   "index.f34bb951.css": {
     "file": "index.f34bb951.css",
@@ -102,9 +97,7 @@ export default {
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"
     ],
-    "css": [
-      "default.fe34464b.css"
-    ]
+    "css": []
   },
   "default.fe34464b.css": {
     "file": "default.fe34464b.css",
@@ -119,28 +112,21 @@ export default {
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"
     ],
-    "css": [
-      "products.001c26fe.css"
-    ]
+    "css": []
   },
   "products.001c26fe.css": {
     "file": "products.001c26fe.css",
     "resourceType": "style"
   },
-  "pages/about.css": {
+  "layouts/products.css": {
     "resourceType": "style",
-    "file": "about.cb784107.css",
-    "src": "pages/about.css"
+    "file": "products.001c26fe.css",
+    "src": "layouts/products.css"
   },
   "pages/index.css": {
     "resourceType": "style",
     "file": "index.f34bb951.css",
     "src": "pages/index.css"
-  },
-  "layouts/products.css": {
-    "resourceType": "style",
-    "file": "products.001c26fe.css",
-    "src": "layouts/products.css"
   },
   "layouts/default.css": {
     "resourceType": "style",
@@ -151,5 +137,16 @@ export default {
     "resourceType": "style",
     "file": "entry.d5006b6e.css",
     "src": "node_modules/nuxt/dist/app/entry.css"
+  },
+  "pages/about.css": {
+    "resourceType": "style",
+    "file": "about.cb784107.css",
+    "src": "pages/about.css"
+  },
+  "node_modules/nuxt/dist/app/entry.mjs-css": {
+    "file": "",
+    "css": [
+      "entry.d5006b6e.css"
+    ]
   }
 }

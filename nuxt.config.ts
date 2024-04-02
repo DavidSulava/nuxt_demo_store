@@ -21,6 +21,6 @@ export default defineNuxtConfig({
   generate:{
     nojekyll: true, //not working on this version
   },
-  ssr: false, //When false
-  target: "static", // and static, nuxt generates a SPA
+  // ssr: false, //When false
+  target: 'static', // and static, nuxt generates a SPA
 })

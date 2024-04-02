@@ -18,9 +18,9 @@ export default defineNuxtConfig({
   runtimeConfig: {
     currencyKey: process.env.CURRENCY_API_KEY
   },
-  // generate:{
-  //   nojekyll: true, //not working on this version
-  // },
-  // ssr: false, //When false
-  // target: 'static', // and static, nuxt generates a SPA
+  generate:{
+    nojekyll: true, //not working on this version
+  },
+  ssr: false, //When false
+  target: 'static', // and static, nuxt generates a SPA
 })

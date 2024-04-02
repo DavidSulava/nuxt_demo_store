@@ -137,15 +137,15 @@
     "file": "products.001c26fe.css",
     "src": "layouts/products.css"
   },
-  "node_modules/nuxt/dist/app/entry.css": {
-    "resourceType": "style",
-    "file": "entry.d5006b6e.css",
-    "src": "node_modules/nuxt/dist/app/entry.css"
-  },
   "layouts/default.css": {
     "resourceType": "style",
     "file": "default.fe34464b.css",
     "src": "layouts/default.css"
+  },
+  "node_modules/nuxt/dist/app/entry.css": {
+    "resourceType": "style",
+    "file": "entry.d5006b6e.css",
+    "src": "node_modules/nuxt/dist/app/entry.css"
   },
   "pages/index.css": {
     "resourceType": "style",

@@ -8,10 +8,11 @@
     "dynamicImports": [
       "virtual:nuxt:/home/david/Programming/Personal/Store_On_Nuxt_3/.nuxt/error-component.mjs",
       "layouts/default.vue",
-      "layouts/products.vue",
-      "node_modules/nuxt/dist/app/entry.mjs-css"
+      "layouts/products.vue"
     ],
-    "css": []
+    "css": [
+      "entry.d5006b6e.css"
+    ]
   },
   "entry.d5006b6e.css": {
     "file": "entry.d5006b6e.css",
@@ -37,7 +38,9 @@
       "node_modules/nuxt/dist/app/entry.mjs",
       "_fetch.63c9fdec.js"
     ],
-    "css": []
+    "css": [
+      "about.cb784107.css"
+    ]
   },
   "about.cb784107.css": {
     "file": "about.cb784107.css",
@@ -60,7 +63,9 @@
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"
     ],
-    "css": []
+    "css": [
+      "index.f34bb951.css"
+    ]
   },
   "index.f34bb951.css": {
     "file": "index.f34bb951.css",
@@ -97,7 +102,9 @@
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"
     ],
-    "css": []
+    "css": [
+      "default.fe34464b.css"
+    ]
   },
   "default.fe34464b.css": {
     "file": "default.fe34464b.css",
@@ -112,41 +119,37 @@
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"
     ],
-    "css": []
+    "css": [
+      "products.001c26fe.css"
+    ]
   },
   "products.001c26fe.css": {
     "file": "products.001c26fe.css",
     "resourceType": "style"
-  },
-  "layouts/products.css": {
-    "resourceType": "style",
-    "file": "products.001c26fe.css",
-    "src": "layouts/products.css"
-  },
-  "pages/index.css": {
-    "resourceType": "style",
-    "file": "index.f34bb951.css",
-    "src": "pages/index.css"
-  },
-  "layouts/default.css": {
-    "resourceType": "style",
-    "file": "default.fe34464b.css",
-    "src": "layouts/default.css"
-  },
-  "node_modules/nuxt/dist/app/entry.css": {
-    "resourceType": "style",
-    "file": "entry.d5006b6e.css",
-    "src": "node_modules/nuxt/dist/app/entry.css"
   },
   "pages/about.css": {
     "resourceType": "style",
     "file": "about.cb784107.css",
     "src": "pages/about.css"
   },
-  "node_modules/nuxt/dist/app/entry.mjs-css": {
-    "file": "",
-    "css": [
-      "entry.d5006b6e.css"
-    ]
+  "layouts/products.css": {
+    "resourceType": "style",
+    "file": "products.001c26fe.css",
+    "src": "layouts/products.css"
+  },
+  "node_modules/nuxt/dist/app/entry.css": {
+    "resourceType": "style",
+    "file": "entry.d5006b6e.css",
+    "src": "node_modules/nuxt/dist/app/entry.css"
+  },
+  "layouts/default.css": {
+    "resourceType": "style",
+    "file": "default.fe34464b.css",
+    "src": "layouts/default.css"
+  },
+  "pages/index.css": {
+    "resourceType": "style",
+    "file": "index.f34bb951.css",
+    "src": "pages/index.css"
   }
 }

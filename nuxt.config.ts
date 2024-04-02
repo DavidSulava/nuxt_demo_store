@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss'
   ],
   app: {
+    baseURL: '/nuxt_demo_store/',
     head: {
       title: 'Nuxt 3 Demo Store',
       meta: [
@@ -16,5 +17,11 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     currencyKey: process.env.CURRENCY_API_KEY
-  }
+  },
+  generate:{
+    nojekyll: true, //not working on this version
+    fallback: '404.html',
+  },
+  ssr: false, //When false
+  target: "static", // and static, nuxt generates a SPA
 })

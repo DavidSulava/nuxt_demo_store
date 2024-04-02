@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss'
   ],
   public: {
-    baseURL: '',
+    apiBaseUrl: '',
   },
   app: {
     baseURL: '/nuxt_demo_store/',

@@ -30,6 +30,6 @@ jobs:
           git config --local user.name "GitHub Action"
           git commit -m 'deploy'
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: actions/github-pages-deploy-action@v4
         with:
           folder: ${{env.BUILD_FOLDER}}

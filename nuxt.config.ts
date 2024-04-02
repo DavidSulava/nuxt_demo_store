@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss'
   ],
   app: {
-    // baseURL: '/nuxt_demo_store/',
+    baseURL: '/nuxt_demo_store/',
     head: {
       title: 'Nuxt 3 Demo Store',
       meta: [

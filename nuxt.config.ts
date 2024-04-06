@@ -3,9 +3,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss'
   ],
-  public: {
-    apiBaseUrl: '',
-  },
   app: {
     baseURL: '/nuxt_demo_store/',
     head: {
@@ -19,7 +16,10 @@ export default defineNuxtConfig({
     }
   },
   runtimeConfig: {
-    currencyKey: process.env.CURRENCY_API_KEY
+    currencyKey: process.env.CURRENCY_API_KEY,
+    public: {
+      baseURL: '/nuxt_demo_store/',
+    },
   },
   generate:{
     nojekyll: true, //not working on this version

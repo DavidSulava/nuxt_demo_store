@@ -1,7 +1,10 @@
 <template>
   <div>
     <div class="grid gap-5 grid-cols-2 md:grid-cols-4">
-      <div v-for="p in products">
+      <div v-if="pending" v-for="n in 20">
+        <SkeletonLoaderProductCard />
+      </div>
+      <div v-else v-for="p in products">
         <ProductCard :product="p" />
       </div>
     </div>
@@ -10,7 +13,13 @@
 
 <script setup>
   //  fetch the products
-  const { data: products } = await useFetch('https://fakestoreapi.com/products')
+  const uri = '/api/products'
+  const { data: products, pending, refresh } = await useFetch(uri);
+
+  watchEffect(() => {
+    refresh()
+  });
+
 
   definePageMeta({
     layout: "products",

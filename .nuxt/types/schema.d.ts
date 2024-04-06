@@ -16,6 +16,6 @@ declare module '@nuxt/schema' {
     currencyKey: string,
   }
   interface PublicRuntimeConfig {
-  
+     baseURL: string,
   }
 }

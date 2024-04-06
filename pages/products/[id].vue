@@ -4,21 +4,23 @@
       <Title>Demo Store | {{ product.title }}</Title>
       <Meta name="description" :content="product.description" />
     </Head>
-    
-    <ProductDetails :product="product" />
+
+    <SceletonLoaderProductDetails v-if="pending" />
+    <ProductDetails v-else :product="product" />
   </div>
 </template>
 
 <script setup>
-  const { id } = useRoute().params
-  const uri = 'https://fakestoreapi.com/products/' + id
+  const { id } = useRoute().params;
 
   //  fetch the products
-  const { data: product } = await useFetch(uri, { key: id })
+  const { data: product, pending, refresh } = await useFetch('/api/products', {
+    query: { id: id },
+  });
 
-  if (!product.value) {
-    throw createError({ statusCode: 404, statusMessage: 'Product not found' })
-  }
+  watchEffect(() => {
+    refresh()
+  });
 
   definePageMeta({
     layout: "products",

@@ -15,11 +15,16 @@ export default defineNuxtConfig({
       ]
     }
   },
+  routeRules: {
+    '/': { prerender: true },
+    '/products': { swr: true },
+    '/products/**': { swr: 3600 },
+  },
   runtimeConfig: {
     currencyKey: process.env.CURRENCY_API_KEY,
     public: {
       apiBaseUrl: '/',
     },
   },
-  ssr: false,
+  ssr: true,
 })

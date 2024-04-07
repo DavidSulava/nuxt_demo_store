@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-  const {data} = await useFetch('/api/currency/GBP', {server: true})
+  const {data} = await useLazyFetch('/api/currency/GBP', {server: true})
 </script>
 
 <style scoped>

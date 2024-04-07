@@ -12,15 +12,29 @@
 </template>
 
 <script setup>
-  //  fetch the products
-  const uri = '/api/products'
-  const { data: products, pending } = await useFetch(uri);
+  const products = ref([]);
+  const pending = ref(true);
 
+  onMounted(async () => {
+    getProducts();
+  });
+
+  const getProducts = async () => {
+    try {
+      pending.value = true;
+      const {data} = await useFetch('/api/products');
+      if (data?.value) {
+        products.value = data.value;
+      }
+
+    } finally {
+      pending.value = false
+    }
+  }
 
   definePageMeta({
     layout: "products",
   })
-
   useHead({
     title: 'Demo Store | Merch',
     meta: [

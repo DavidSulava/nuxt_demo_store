@@ -132,6 +132,11 @@ const client_manifest = {
     "file": "about.bf5cb0f3.css",
     "src": "pages/about.css"
   },
+  "layouts/products.css": {
+    "resourceType": "style",
+    "file": "products.001c26fe.css",
+    "src": "layouts/products.css"
+  },
   "pages/index.css": {
     "resourceType": "style",
     "file": "index.f34bb951.css",
@@ -141,11 +146,6 @@ const client_manifest = {
     "resourceType": "style",
     "file": "default.fe34464b.css",
     "src": "layouts/default.css"
-  },
-  "layouts/products.css": {
-    "resourceType": "style",
-    "file": "products.001c26fe.css",
-    "src": "layouts/products.css"
   },
   "node_modules/nuxt/dist/app/entry.css": {
     "resourceType": "style",

@@ -4,7 +4,6 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss'
   ],
   app: {
-    baseURL: '/nuxt_demo_store/',
     head: {
       title: 'Nuxt 3 Demo Store',
       meta: [
@@ -25,5 +24,5 @@ export default defineNuxtConfig({
     nojekyll: true, //not working on this version
   },
   ssr: false, //When false
-  target: 'static', // and static, nuxt generates a SPA
+  // target: 'static', // and static, nuxt generates a SPA
 })

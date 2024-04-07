@@ -21,5 +21,5 @@ export default defineNuxtConfig({
       apiBaseUrl: '/',
     },
   },
-  ssr: true,
+  ssr: false,
 })

@@ -14,11 +14,7 @@
 <script setup>
   //  fetch the products
   const uri = '/api/products'
-  const { data: products, pending, refresh } = await useFetch(uri);
-
-  watchEffect(() => {
-    refresh()
-  });
+  const { data: products, pending } = await useFetch(uri);
 
 
   definePageMeta({

@@ -127,25 +127,25 @@ const client_manifest = {
     "file": "products.001c26fe.css",
     "resourceType": "style"
   },
-  "pages/about.css": {
-    "resourceType": "style",
-    "file": "about.bf5cb0f3.css",
-    "src": "pages/about.css"
-  },
-  "layouts/products.css": {
-    "resourceType": "style",
-    "file": "products.001c26fe.css",
-    "src": "layouts/products.css"
-  },
   "pages/index.css": {
     "resourceType": "style",
     "file": "index.f34bb951.css",
     "src": "pages/index.css"
   },
+  "pages/about.css": {
+    "resourceType": "style",
+    "file": "about.bf5cb0f3.css",
+    "src": "pages/about.css"
+  },
   "layouts/default.css": {
     "resourceType": "style",
     "file": "default.fe34464b.css",
     "src": "layouts/default.css"
+  },
+  "layouts/products.css": {
+    "resourceType": "style",
+    "file": "products.001c26fe.css",
+    "src": "layouts/products.css"
   },
   "node_modules/nuxt/dist/app/entry.css": {
     "resourceType": "style",

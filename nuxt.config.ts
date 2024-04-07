@@ -20,9 +20,5 @@ export default defineNuxtConfig({
       baseURL: '/nuxt_demo_store/',
     },
   },
-  generate:{
-    nojekyll: true, //not working on this version
-  },
   ssr: false, //When false
-  // target: 'static', // and static, nuxt generates a SPA
 })

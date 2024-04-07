@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss'
   ],
   app: {
+    baseURL: '/',
     head: {
       title: 'Nuxt 3 Demo Store',
       meta: [
@@ -16,6 +17,9 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     currencyKey: process.env.CURRENCY_API_KEY,
+    public: {
+      apiBaseUrl: '/',
+    },
   },
   ssr: false, //When false
 })

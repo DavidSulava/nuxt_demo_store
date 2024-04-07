@@ -1,0 +1,1 @@
+export default {data:{$f$c6wy8KmN8o:{meta:{last_updated_at:"2024-04-06T23:59:59Z"},data:{GBP:{code:"GBP",value:.7912301447}}}},prerenderedAt:1712480518251}
